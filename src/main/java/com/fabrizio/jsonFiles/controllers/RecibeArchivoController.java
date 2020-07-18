@@ -25,7 +25,7 @@ public class RecibeArchivoController {
 	@PostMapping("/enviar")
 	public String inicio(@RequestParam(required = false, value = "file") MultipartFile archivo){
 		archivoService.readFile(archivo);
-		return "inicio";
+		return "success";
 	}
 	
 }

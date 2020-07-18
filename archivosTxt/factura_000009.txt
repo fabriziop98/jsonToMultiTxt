@@ -1,0 +1,7 @@
+factura/tipcom=Factura
+factura/codven=ADM
+factura/codcta=000009
+linea/codart=1
+linea/cantid=5
+linea/precio=$ 800,00
+linea/grabar
