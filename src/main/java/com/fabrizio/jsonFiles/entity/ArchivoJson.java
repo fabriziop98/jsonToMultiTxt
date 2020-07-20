@@ -6,6 +6,7 @@ import lombok.Data;
 public class ArchivoJson {
 	
 	public String number;
+	public String status;
 	public String pago;
 	public String createdDate;
 	public String dueDate;

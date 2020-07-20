@@ -10,10 +10,9 @@ import java.util.regex.Pattern;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -31,19 +30,20 @@ public class DivideArchivoService {
 
 	private Logger LOGGER = LoggerFactory.getLogger(DivideArchivoService.class);
 
-	@SuppressWarnings("unchecked")
-	public void readFile(MultipartFile archivo) {
+
+	public void readFile(JSONArray objetos) {
 		JSONParser parser = new JSONParser();
 		ArchivoTxt txt = new ArchivoTxt();
 		try {
-			Object obj = parser.parse(new FileReader(convertMultiPartFileToFile(archivo)));
-			
-			JSONArray companyList = (JSONArray) obj;
+//			Object obj = parser.parse(new FileReader(convertMultiPartFileToFile(archivo)));
+//			JSONArray companyList = (JSONArray) obj;
+			JSONArray companyList = objetos; 
 			List<ArchivoTxt> listaTxt = new ArrayList<>();
 			
 			PrintWriter writer;
 			try {
 				for (Object o : companyList){
+					System.out.println(o.toString());
 					 JSONObject factura = (JSONObject) o;
 					writer = new PrintWriter(FileUtil.RUTA_ARCHIVOS + "factura_"+ (String) factura.get("Number") + ".txt", "UTF-8");
 				    writer.println("factura/tipcom=Factura");
@@ -94,13 +94,13 @@ public class DivideArchivoService {
 //				generadorArchivo(lineasTexto(iteratorMod.next()));
 //			}
 
-		} catch (IOException | ParseException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
 
-	private File convertMultiPartFileToFile(final MultipartFile multipartFile) {
+	public File convertMultiPartFileToFile(final MultipartFile multipartFile) {
 		final File file = new File(multipartFile.getOriginalFilename());
 		try (final FileOutputStream outputStream = new FileOutputStream(file)) {
 			outputStream.write(multipartFile.getBytes());
@@ -111,7 +111,7 @@ public class DivideArchivoService {
 	}
 
 
-	private void generadorArchivo(String[] lineasTexto) {
+	public void generadorArchivo(String[] lineasTexto) {
 
 		PrintWriter writer;
 		try {
@@ -126,7 +126,7 @@ public class DivideArchivoService {
 
 	}
 
-	private String[] lineasTexto(JSONObject iteratorModificado) {
+	public String[] lineasTexto(JSONObject iteratorModificado) {
 
 		String objetoString = iteratorModificado.toString();
 		objetoString = objetoString.substring(1, objetoString.length() - 1);
