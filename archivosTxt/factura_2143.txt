@@ -1,0 +1,10 @@
+factura/codcta=552
+factura/nombre=Alejandra Aballay
+factura/nroiva=32627627
+factura/direccion=Barrio 26 de Enero M24 C12, Las Heras, 5539, Argentina
+factura/mail=margafeliale1@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

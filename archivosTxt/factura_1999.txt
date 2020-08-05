@@ -1,0 +1,10 @@
+factura/codcta=407
+factura/nombre=Roberto Raúl Ricarte
+factura/nroiva=22027115
+factura/direccion=Maipu 955, Las Heras, 5539, Argentina
+factura/mail=robertoricarte2013@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

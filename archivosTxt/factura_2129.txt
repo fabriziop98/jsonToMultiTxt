@@ -1,0 +1,10 @@
+factura/codcta=367
+factura/nombre=Estela Gonzalez
+factura/nroiva=16394440
+factura/direccion=Segundo Callejón Morales 2110, Las Heras, 5539, Argentina
+factura/mail=estelagonzalez057@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

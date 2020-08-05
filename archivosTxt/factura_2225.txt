@@ -1,0 +1,10 @@
+factura/codcta=569
+factura/nombre=Norman Ivan Rodriguez
+factura/nroiva=37136775
+factura/direccion=Lisandro Moyano entre Dorrego y JM Rosas, Las Heras, 5539, Argentina
+factura/mail=carrottattoo@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=575
+factura/nombre=Angel Rodrigo Santos Ponce
+factura/nroiva=35200230
+factura/direccion=Chubut 1878, Las Heras, 5539, Argentina
+factura/mail=Santos.Rodri.1990@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

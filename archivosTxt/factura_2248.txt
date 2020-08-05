@@ -1,0 +1,10 @@
+factura/codcta=245
+factura/nombre=Alejandro Fabián García
+factura/nroiva=27968107
+factura/direccion=Barrio Álvarez Condarco ME C11, Las Heras, 5539, Argentina
+factura/mail=gdaf151279@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

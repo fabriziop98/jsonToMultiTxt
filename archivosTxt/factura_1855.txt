@@ -1,0 +1,10 @@
+factura/codcta=229
+factura/nombre=Lorena Páez
+factura/nroiva=33972516
+factura/direccion=Maipú esq Pascual Segura, Las Heras, 5539, Argentina
+factura/mail=loopaez1313@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

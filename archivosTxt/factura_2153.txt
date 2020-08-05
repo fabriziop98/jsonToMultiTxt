@@ -1,0 +1,10 @@
+factura/codcta=286
+factura/nombre=Noelia Natali Nievas
+factura/nroiva=35547078
+factura/direccion=B: Democracia M-D  C-15, Carniceria/Hermana de la titular, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=42
+factura/nombre=Elsa Cristina Diaz
+factura/nroiva=17214399
+factura/direccion=Garibaldi 305, Barrio Tamarindo III M-C C-17, Las Heras, 5539, Argentina
+factura/mail=maicastro83@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

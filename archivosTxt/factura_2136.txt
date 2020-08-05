@@ -1,0 +1,10 @@
+factura/codcta=283
+factura/nombre=Manuel Leandro Fernandez Caño
+factura/nroiva=36031881
+factura/direccion=Pascual Segura 3663, Las Heras, 5539, Argentina
+factura/mail=ochoae519@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

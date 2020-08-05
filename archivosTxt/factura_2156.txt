@@ -1,0 +1,10 @@
+factura/codcta=238
+factura/nombre=José Carlos Prieto Tapia
+factura/nroiva=31286297
+factura/direccion=Barrio Cristo Redentor MA C10, Las Heras, 5539, Argentina
+factura/mail=johanagaldame2018@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

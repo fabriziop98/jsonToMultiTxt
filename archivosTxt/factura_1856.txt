@@ -1,0 +1,10 @@
+factura/codcta=482
+factura/nombre=Facundo Joel Rojas
+factura/nroiva=37414333
+factura/direccion=4° Brigada Aérea 3246, Las Heras, 5539, Argentina
+factura/mail=facundo.rojas414@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

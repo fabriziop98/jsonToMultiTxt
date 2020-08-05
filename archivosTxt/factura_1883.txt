@@ -1,0 +1,10 @@
+factura/codcta=373
+factura/nombre=Ana Laura Perez
+factura/nroiva=20168788
+factura/direccion=Pedro Pascual Segura 3572, Las Heras, 5539, Argentina
+factura/mail=aldosol42@gmail.com
+factura/codiva=cf
+linea/codart=4
+linea/cantid=1
+linea/precio=2500
+linea/grabar

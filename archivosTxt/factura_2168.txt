@@ -1,0 +1,10 @@
+factura/codcta=519
+factura/nombre=Carlos Clemente Humberto
+factura/nroiva=6809344
+factura/direccion=Maipú 1032, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

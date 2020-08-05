@@ -1,0 +1,10 @@
+factura/codcta=531
+factura/nombre=Jonathan Alexander Roldan Cofré
+factura/nroiva=94347373
+factura/direccion=Azcuenaga al 1540, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

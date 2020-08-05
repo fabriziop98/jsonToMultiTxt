@@ -1,0 +1,10 @@
+factura/codcta=392
+factura/nombre=Alexia Betsabé Danisa Rábanos
+factura/nroiva=35615270
+factura/direccion=Chubut 1900, Barrio Jorge Newbery, Las Heras, 5539, Argentina
+factura/mail=alerabanos450@gmail.com
+factura/codiva=cf
+linea/codart=PLAN 15MB ($ 6MB)
+linea/cantid=1
+linea/precio=1299
+linea/grabar

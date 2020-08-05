@@ -1,0 +1,10 @@
+factura/codcta=63
+factura/nombre=Rafael Bustamante
+factura/nroiva=
+factura/direccion=B; Democracia M-E  C-10, puerta Negra, Las Heras, 5539, Argentina
+factura/mail=3174648@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

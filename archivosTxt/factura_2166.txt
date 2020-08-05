@@ -1,0 +1,10 @@
+factura/codcta=365
+factura/nombre=Laura Daniela Torres
+factura/nroiva=29537760
+factura/direccion=San Pedro 1944, Portón negro, Las Heras, 5539, Argentina
+factura/mail=danielita2071@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

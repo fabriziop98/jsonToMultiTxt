@@ -1,0 +1,10 @@
+factura/codcta=161
+factura/nombre=Miriam Lidia Navarro
+factura/nroiva=22168927
+factura/direccion=1° de Mayo 872, Las Heras, 5539, Argentina
+factura/mail=miriamlidianavarro@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

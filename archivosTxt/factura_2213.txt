@@ -1,0 +1,10 @@
+factura/codcta=138
+factura/nombre=Yesica Veronica Toledo
+factura/nroiva=30510355
+factura/direccion=Junín 1889, Postes de luz/entrada, Las Heras, 5539, Argentina
+factura/mail=yesicatoledo225@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

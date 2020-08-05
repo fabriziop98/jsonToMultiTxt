@@ -1,0 +1,10 @@
+factura/codcta=248
+factura/nombre=Jessica Gimena Guevara
+factura/nroiva=32377291
+factura/direccion=Cornelio Moyano 2632, las heras, Argentina
+factura/mail=jessicagimenaguevara@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=199
+factura/nombre=Jorge Emanuel Mela
+factura/nroiva=28226027
+factura/direccion=Callejón Sinqueman, Por Pascual Segura 100 Mts antes de Maipu, Las Heras, 5539, Argentina
+factura/mail=mela63909@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

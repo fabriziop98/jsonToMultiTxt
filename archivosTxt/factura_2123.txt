@@ -1,0 +1,10 @@
+factura/codcta=566
+factura/nombre=Elizabeth Lourdes Serra
+factura/nroiva=27968021
+factura/direccion=Barrionuevo 192, Las Heras, 5539, Argentina
+factura/mail=luchiserra15@gmail.com
+factura/codiva=cf
+linea/codart=4
+linea/cantid=1
+linea/precio=2400
+linea/grabar

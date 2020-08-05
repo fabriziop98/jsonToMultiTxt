@@ -1,0 +1,10 @@
+factura/codcta=570
+factura/nombre=Hernan Exequiel Olmos Lledo
+factura/nroiva=38581766
+factura/direccion=San Juan 2659, Entre 3 de Febrero y Mansilla, Las Heras, 5539, Argentina
+factura/mail=darkkanger@gmail.com
+factura/codiva=cf
+linea/codart=5
+linea/cantid=1
+linea/precio=2999
+linea/grabar

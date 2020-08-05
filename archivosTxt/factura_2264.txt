@@ -1,0 +1,10 @@
+factura/codcta=122
+factura/nombre=Jesús Alejandro Sidan
+factura/nroiva=18886560
+factura/direccion=Barrio San Lorenzo MB C1, Las Heras, 5539, Argentina
+factura/mail=kiarafreire123@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1508
+linea/grabar

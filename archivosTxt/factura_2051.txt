@@ -1,0 +1,10 @@
+factura/codcta=458
+factura/nombre=Leonardo Gabriel Moreno
+factura/nroiva=43543248
+factura/direccion=Barrio Sismo 5 MM C4, Las Heras, 5539, Argentina
+factura/mail=leonardomoreno018@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

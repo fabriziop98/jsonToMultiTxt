@@ -1,0 +1,10 @@
+factura/codcta=281
+factura/nombre=Jonathan Jose Sepúlveda
+factura/nroiva=34607117
+factura/direccion=Calle Europa C-15, Continuacion de Maipu, Las Heras, 5539, Argentina
+factura/mail=jonnhyaity24@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

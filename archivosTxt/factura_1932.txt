@@ -1,0 +1,10 @@
+factura/codcta=518
+factura/nombre=Roxana Beatriz Camacho
+factura/nroiva=27412895
+factura/direccion=Río Juramento 3820, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

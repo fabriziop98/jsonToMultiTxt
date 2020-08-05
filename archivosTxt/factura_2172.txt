@@ -1,0 +1,10 @@
+factura/codcta=56
+factura/nombre=Alfredo Morales
+factura/nroiva=
+factura/direccion=B:Democracia M-D  C-12, Calle 3, Las Heras, 5539, Argentina
+factura/mail=alfredo08morales@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

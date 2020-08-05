@@ -1,0 +1,10 @@
+factura/codcta=417
+factura/nombre=Omar Daniel Sarmiento
+factura/nroiva=16441315
+factura/direccion=Las Heras, 5539, Argentina
+factura/mail=somar5080@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

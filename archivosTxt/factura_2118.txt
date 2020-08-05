@@ -1,0 +1,10 @@
+factura/codcta=274
+factura/nombre=Lucas Maximiliano Quattrocchi
+factura/nroiva=29341283
+factura/direccion=Barrio San Lorenzo MA C18, Las Heras, 5539, Argentina
+factura/mail=maxigloria15@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=224
+factura/nombre=Florencia Antonela Paez
+factura/nroiva=40972532
+factura/direccion=b° Jorge Newbery calle Maipu 1651 entre gral paz y rio juramento, el algarrobal, Argentina
+factura/mail=florenciabrianela98@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

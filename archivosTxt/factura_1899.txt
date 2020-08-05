@@ -1,0 +1,10 @@
+factura/codcta=521
+factura/nombre=Estela Gladis Rodriguez
+factura/nroiva=12223451
+factura/direccion=Puerto Argentino 2753, Barrio Cordón del Plata MD  C10, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

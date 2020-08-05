@@ -1,0 +1,10 @@
+factura/codcta=400
+factura/nombre=Emmanuel Elías Pereyra
+factura/nroiva=32353308
+factura/direccion=Remedios Escalada 2778, Las Heras, 5539, Argentina
+factura/mail=gisel_chara@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

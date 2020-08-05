@@ -1,0 +1,10 @@
+factura/codcta=320
+factura/nombre=Atilio Gerónimo Sosa
+factura/nroiva=13690500
+factura/direccion=Lencines 2958, Color de.la casa ...blanca con piedra laja negra y portón gris, Las Heras, 5539, Argentina
+factura/mail=asosa@interproductores.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

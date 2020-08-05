@@ -1,0 +1,10 @@
+factura/codcta=322
+factura/nombre=Pablo Sebastian Requelme
+factura/nroiva=33166790
+factura/direccion=Libertad 2562, Las Heras, 5539, Argentina
+factura/mail=saternaku14@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

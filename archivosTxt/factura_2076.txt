@@ -1,0 +1,10 @@
+factura/codcta=326
+factura/nombre=Carina Ramirez
+factura/nroiva=30071217
+factura/direccion=B: Democracia, Esquina pasando los kiosco, Las Heras, 5539, Argentina
+factura/mail=carinaramirez165@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

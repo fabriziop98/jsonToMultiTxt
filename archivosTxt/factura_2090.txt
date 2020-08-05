@@ -1,0 +1,10 @@
+factura/codcta=434
+factura/nombre=Maria del Carmen Ardito
+factura/nroiva=12233819
+factura/direccion=Mansilla 2428, Barrio Cordón del Plata ME C10, Las Heras, 5539, Argentina
+factura/mail=carmenardito60@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=492
+factura/nombre=Stella Echavez
+factura/nroiva=16340212
+factura/direccion=Maipú 984, Las Heras, 5539, Argentina
+factura/mail=gonm4262@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

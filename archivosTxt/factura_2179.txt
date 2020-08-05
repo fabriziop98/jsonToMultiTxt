@@ -1,0 +1,10 @@
+factura/codcta=555
+factura/nombre=Laura Karen Martín Pedrón
+factura/nroiva=30681534
+factura/direccion=Barrio San Gabriel MD C16, Las Heras, 5539, Argentina
+factura/mail=diegoesquivel994@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

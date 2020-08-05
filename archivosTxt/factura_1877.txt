@@ -1,0 +1,10 @@
+factura/codcta=389
+factura/nombre=Cristian Tomas Ochiuto
+factura/nroiva=42010046
+factura/direccion=Barrio Maestri M M C5, Las Heras, 5539, Argentina
+factura/mail=tomidrauhl@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=185
+factura/nombre=Maria Luisa Gerez
+factura/nroiva=10151962
+factura/direccion=Guaymallén 879, Las Heras, 5539, Argentina
+factura/mail=gerezmarialuisa@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

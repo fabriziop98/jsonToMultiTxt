@@ -1,0 +1,10 @@
+factura/codcta=294
+factura/nombre=Gabriela Bettiana Agüero
+factura/nroiva=35553450
+factura/direccion=4ta Brigada Aérea lote 13 C 2, Las Heras, 5539, Argentina
+factura/mail=gabrielaaguero18@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

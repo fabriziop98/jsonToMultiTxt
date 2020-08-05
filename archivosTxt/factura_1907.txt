@@ -1,0 +1,10 @@
+factura/codcta=450
+factura/nombre=Yesica Belén Vergara
+factura/nroiva=42243993
+factura/direccion=Barrio 25 de Mayo MA C7, Las Heras, 5539, Argentina
+factura/mail=yekita.vergara17@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

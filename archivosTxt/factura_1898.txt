@@ -1,0 +1,10 @@
+factura/codcta=412
+factura/nombre=María del Carmen Honorato
+factura/nroiva=21911628
+factura/direccion=Barrio Torres del Plumerillo MB C5, Las Heras, 5539, Argentina
+factura/mail=cmreencuentro@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

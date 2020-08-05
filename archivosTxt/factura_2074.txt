@@ -1,0 +1,10 @@
+factura/codcta=123
+factura/nombre=Abel Alejandro Campos
+factura/nroiva=40003837
+factura/direccion=B° Santa Teresita II MJ C8, Las Heras, 5539, Argentina
+factura/mail=abelcampos507@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

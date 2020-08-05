@@ -1,0 +1,10 @@
+factura/codcta=194
+factura/nombre=Mariela Estefanía Gallegos
+factura/nroiva=36137908
+factura/direccion=Barrio Democracia ME C7, Las Heras, 5539, Argentina
+factura/mail=estefaniagallegos79@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=106
+factura/nombre=Adrián Mario Sosa
+factura/nroiva=27036687
+factura/direccion=San Juan 1703, Las Heras, 5539, Argentina
+factura/mail=susanaraffita@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

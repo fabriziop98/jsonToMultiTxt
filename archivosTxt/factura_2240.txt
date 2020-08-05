@@ -1,0 +1,10 @@
+factura/codcta=130
+factura/nombre=Sergio Fernando Alvarez
+factura/nroiva=24192008
+factura/direccion=Parana 749, Las Heras, 5539, Argentina
+factura/mail=fernalva2003@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

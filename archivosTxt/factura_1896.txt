@@ -1,0 +1,10 @@
+factura/codcta=415
+factura/nombre=Jorge Adrián Dinatale
+factura/nroiva=29614654
+factura/direccion=12 de octubre 1217, Las Heras, 5539, Argentina
+factura/mail=jorgecorte2@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=213
+factura/nombre=Carla Rocío Mendez
+factura/nroiva=40372506
+factura/direccion=Eva Perón 1726, Las Heras, 5539, Argentina
+factura/mail=karlaali148@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

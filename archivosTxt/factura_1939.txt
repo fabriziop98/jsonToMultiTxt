@@ -1,0 +1,10 @@
+factura/codcta=461
+factura/nombre=Edith Neofita Lencinas
+factura/nroiva=12264608
+factura/direccion=Barrionuevo 702, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=493
+factura/nombre=Sandra Adriana Diaz
+factura/nroiva=16751877
+factura/direccion=Barrio tamarindo3 MA C6, Las Heras, 5539, Argentina
+factura/mail=macarena.paura@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

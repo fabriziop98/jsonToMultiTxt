@@ -1,0 +1,10 @@
+factura/codcta=448
+factura/nombre=Yesica Analia Ahumada
+factura/nroiva=38205779
+factura/direccion=Paso del Portillo 2142, Barrio Independencia, Las Heras, 5539, Argentina
+factura/mail=cavilliotticarlos@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

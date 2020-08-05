@@ -1,0 +1,10 @@
+factura/codcta=239
+factura/nombre=Gonzalo Saul Bruna
+factura/nroiva=36586508
+factura/direccion=Maipu 1004, algarrobal, Argentina
+factura/mail=gonzaxperiaz5@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

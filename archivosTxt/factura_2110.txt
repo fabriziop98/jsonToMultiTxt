@@ -1,0 +1,10 @@
+factura/codcta=305
+factura/nombre=Mariana Castellino
+factura/nroiva=26545715
+factura/direccion=Ameghino 2323, Las Heras, 5539, Argentina
+factura/mail=castellinomariana6@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

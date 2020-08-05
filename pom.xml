@@ -20,13 +20,52 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.2</version>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.google.collections/google-collections -->
+		<dependency>
+			<groupId>com.google.collections</groupId>
+			<artifactId>google-collections</artifactId>
+			<version>1.0-rc2</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.12</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+
+
+
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson/jackson-dataformat-csv -->
 		<dependency>
 			<groupId>com.fasterxml.jackson</groupId>
@@ -77,6 +116,61 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.fabrizio.jsonFiles.JsonFiles1Application</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.akathist.maven.plugins.launch4j</groupId>
+				<artifactId>launch4j-maven-plugin</artifactId>
+				<version>1.7.16</version>
+				<executions>
+					<execution>
+						<id>l4j-clui</id>
+						<phase>package</phase>
+						<goals>
+							<goal>launch4j</goal>
+						</goals>
+						<configuration>
+							<headerType>console</headerType>
+							<outfile>target/apidast.exe</outfile>
+							<jar>${project.build.directory}/${artifactId}-${version}.jar</jar>
+							<errTitle>encc</errTitle>
+							<classPath>
+								<!-- <icon>${projectDir}/NR internet.png</icon> -->
+								<mainClass>org.springframework.boot.loader.JarLauncher</mainClass>
+								<addDependencies>true</addDependencies>
+								<preCp>anything</preCp>
+							</classPath>
+							<jre>
+								<minVersion>1.8.0_212</minVersion>
+								<opts>
+									<opt>-Djava.endorsed.dirs=./endorsed</opt>
+								</opts>
+							</jre>
+							<versionInfo>
+								<fileVersion>0.0.1.0</fileVersion>
+								<txtFileVersion>0.0.1.0</txtFileVersion>
+								<fileDescription>${project.name}</fileDescription>
+								<copyright>Fabrizio Pratici.</copyright>
+								<productVersion>0.0.1.0</productVersion>
+								<txtProductVersion>${version}</txtProductVersion>
+								<productName>${project.name}</productName>
+								<originalFilename>Conversor.exe</originalFilename>
+								<!-- internalName is mandatory -->
+								<internalName>Conversor</internalName>
+							</versionInfo>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

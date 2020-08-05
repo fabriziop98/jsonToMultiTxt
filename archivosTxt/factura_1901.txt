@@ -1,0 +1,10 @@
+factura/codcta=377
+factura/nombre=Jorge Bernardino Gallegos
+factura/nroiva=13116892
+factura/direccion=Barrio Democracia ME C7, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

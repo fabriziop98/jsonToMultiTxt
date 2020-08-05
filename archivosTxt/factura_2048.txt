@@ -1,0 +1,10 @@
+factura/codcta=268
+factura/nombre=Eduardo Rubén Rios
+factura/nroiva=22438290
+factura/direccion=Pedro Pascual Segura 4052, Las Heras, 5539, Argentina
+factura/mail=eduardorios41@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

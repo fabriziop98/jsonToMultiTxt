@@ -1,0 +1,10 @@
+factura/codcta=425
+factura/nombre=Sergio Roberto Vildozo
+factura/nroiva=21778986
+factura/direccion=Martin Zapata 659, Las Heras, 5539, Argentina
+factura/mail=roizcristian42@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

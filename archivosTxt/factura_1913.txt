@@ -1,0 +1,10 @@
+factura/codcta=411
+factura/nombre=Norberto Luis Chavez
+factura/nroiva=21854600
+factura/direccion=Barrio Santa Teresita MH C20, Las Heras, 5539, Argentina
+factura/mail=chavoncitoxxl21@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

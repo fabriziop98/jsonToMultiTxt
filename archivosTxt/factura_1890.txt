@@ -1,0 +1,10 @@
+factura/codcta=164
+factura/nombre=Maria Belen Verón
+factura/nroiva=39604470
+factura/direccion=B: Santa Teresita M-E  C-22, Las Heras, 5539, Argentina
+factura/mail=rodrigoriver7773@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

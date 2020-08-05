@@ -1,0 +1,10 @@
+factura/codcta=578
+factura/nombre=Leonardo Gonzalez
+factura/nroiva=30584874
+factura/direccion=Manuel A Saez 1349, Las Heras, 5539, Argentina
+factura/mail=m261984@hotmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

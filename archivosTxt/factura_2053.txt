@@ -1,0 +1,10 @@
+factura/codcta=68
+factura/nombre=Patricia Norma Ruarte
+factura/nroiva=18079986
+factura/direccion=Callejón Barrionuevo 416, El Zapallar, Las Heras, 5539, Argentina
+factura/mail=joaquin09garde@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

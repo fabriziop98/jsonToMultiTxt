@@ -1,0 +1,10 @@
+factura/codcta=160
+factura/nombre=Matías Alejandro Rodriguez
+factura/nroiva=33576868
+factura/direccion=Sucre 2916, Las Heras, 5539, Argentina
+factura/mail=matu_1325@hotmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=413
+factura/nombre=Erica Roxana Castro
+factura/nroiva=26186000
+factura/direccion=Barrio Santa Teresita MC C11, Las Heras, 5539, Argentina
+factura/mail=EC21247@gamail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

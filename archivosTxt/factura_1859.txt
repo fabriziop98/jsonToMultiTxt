@@ -1,0 +1,10 @@
+factura/codcta=202
+factura/nombre=Nora Alejandra Gallegos
+factura/nroiva=32162541
+factura/direccion=Barrio Democracia Calle 2, Pasando Hiper calle 2, Las Heras, 5539, Argentina
+factura/mail=2612406636@hotmail.com.ar
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=187
+factura/nombre=Franco Esequiel Henriquez Gonzalez
+factura/nroiva=38462921
+factura/direccion=Callejón Barrionuevo Pasaje Comunero, Las Heras, 5539, Argentina
+factura/mail=francohenriquez55@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

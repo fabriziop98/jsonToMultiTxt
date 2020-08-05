@@ -1,0 +1,10 @@
+factura/codcta=385
+factura/nombre=Cinthya Simona Rosa Flores
+factura/nroiva=30178765
+factura/direccion=Barrio Jorge Newbery MA C23, calle Río juramento, Las Heras, 5539, Argentina
+factura/mail=kf068566@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

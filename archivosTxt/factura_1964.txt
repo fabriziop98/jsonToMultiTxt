@@ -1,0 +1,10 @@
+factura/codcta=513
+factura/nombre=Marisa Estela Nichele
+factura/nroiva=23942865
+factura/direccion=Barrio Democracia MC C4, Las Heras, 5539, Argentina
+factura/mail=nichelemarisa25@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

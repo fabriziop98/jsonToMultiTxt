@@ -1,0 +1,10 @@
+factura/codcta=135
+factura/nombre=Graciela Lourdes Leiton
+factura/nroiva=22354572
+factura/direccion=Pascual Segura 3684, Las Heras, 5539, Argentina
+factura/mail=leitongraciela388@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=207
+factura/nombre=Veronica Cristina Puebla
+factura/nroiva=30343450
+factura/direccion=B° Covitrasa MG C8 (calle eva duarte), las heras, Argentina
+factura/mail=veropuebla08@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

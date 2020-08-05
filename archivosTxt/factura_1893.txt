@@ -1,0 +1,10 @@
+factura/codcta=421
+factura/nombre=Osvaldo Rodolfo Riquelme
+factura/nroiva=23591875
+factura/direccion=Matienzo 2470, Barrio Pellicier, Las Heras, 5539, Argentina
+factura/mail=osvaldorodolforiquelme@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

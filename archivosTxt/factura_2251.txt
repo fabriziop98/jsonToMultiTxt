@@ -1,0 +1,10 @@
+factura/codcta=267
+factura/nombre=Mariela Vanesa Sosa
+factura/nroiva=33093242
+factura/direccion=Libertad 1580, esq San Lorenzo Barrio Espejo, Las Heras, 5539, Argentina
+factura/mail=sosam8423@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

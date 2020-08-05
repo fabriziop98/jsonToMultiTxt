@@ -1,0 +1,10 @@
+factura/codcta=108
+factura/nombre=Adrián Morales
+factura/nroiva=32819427
+factura/direccion=Juan Cornelio Moyano 2274, Las Heras, 5539, Argentina
+factura/mail=elfachalepra22@outlook.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

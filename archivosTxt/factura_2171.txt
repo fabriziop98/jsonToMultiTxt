@@ -1,0 +1,10 @@
+factura/codcta=395
+factura/nombre=Victor Andrés Carrera
+factura/nroiva=23547689
+factura/direccion=Martín Fierro s/n fracción 4, Frente al Htal Carrillo entre Irigoyen y Vzquez, Las Heras, 5539, Argentina
+factura/mail=victorandres.carrera@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

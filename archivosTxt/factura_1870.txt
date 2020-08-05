@@ -1,0 +1,10 @@
+factura/codcta=280
+factura/nombre=Jorge Veras
+factura/nroiva=30189586
+factura/direccion=Martín Zapata 646, Las Heras, 5539, Argentina
+factura/mail=davidveras407@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=2299
+linea/grabar

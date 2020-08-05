@@ -1,0 +1,10 @@
+factura/codcta=65
+factura/nombre=Jonathan Castro
+factura/nroiva=34607390
+factura/direccion=B: Democracia M-D. C9A, Calle 3, Las Heras, 5539, Argentina
+factura/mail=Yoni31.jc@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

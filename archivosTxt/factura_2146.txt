@@ -1,0 +1,10 @@
+factura/codcta=43
+factura/nombre=Walter Adaro
+factura/nroiva=
+factura/direccion=Omar Castillo S/N, Barrio Tamarindo III M-A  C-4, Las Heras, 5539, Argentina
+factura/mail=sandyadaro@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=453
+factura/nombre=Raúl Alejandro Cicero
+factura/nroiva=20942764
+factura/direccion=Libertad 2425, Barrio Cordon del Plata MD C3, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=4
+linea/cantid=1
+linea/precio=2400
+linea/grabar

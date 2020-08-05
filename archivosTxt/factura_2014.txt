@@ -1,0 +1,10 @@
+factura/codcta=87
+factura/nombre=Osvaldo Francisco Bracco
+factura/nroiva=
+factura/direccion=Albox 2535, Las Heras, 5539, Argentina
+factura/mail=jlebracco@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

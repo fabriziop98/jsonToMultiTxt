@@ -1,0 +1,10 @@
+factura/codcta=206
+factura/nombre=Vanina Ines Frecentese
+factura/nroiva=28774864
+factura/direccion=Pascual Segura 3474 Callejon servidumbre (ultima casa) entre zapata y maipu, algarrobal, Argentina
+factura/mail=vaninasutelasheras@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

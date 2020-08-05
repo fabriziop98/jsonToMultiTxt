@@ -1,0 +1,10 @@
+factura/codcta=454
+factura/nombre=Griselda Verónica Pino
+factura/nroiva=18700305
+factura/direccion=Las Heras, 5539, Argentina
+factura/mail=dani34102@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

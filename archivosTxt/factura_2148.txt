@@ -1,0 +1,10 @@
+factura/codcta=588
+factura/nombre=Jennifer Yamila Herrera
+factura/nroiva=32241576
+factura/direccion=Martín zapata 828, Las Heras, 5539, Argentina
+factura/mail=jenniferyamila1986@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

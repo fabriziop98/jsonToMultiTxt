@@ -1,0 +1,10 @@
+factura/codcta=491
+factura/nombre=Oscar Juan Carlos Villalpando
+factura/nroiva=41443855
+factura/direccion=Pedro P Segura 9397, Las Heras, 5539, Argentina
+factura/mail=oscarjuancarlosvillalpandocopa@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

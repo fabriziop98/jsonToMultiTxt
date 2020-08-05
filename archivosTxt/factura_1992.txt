@@ -1,0 +1,10 @@
+factura/codcta=198
+factura/nombre=Marcos Fabian Beiza
+factura/nroiva=34025725
+factura/direccion=Callejón Sinqueman 3474, Por Pascual Segura 100mts antes de Maipu, Las Heras, 5539, Argentina
+factura/mail=beizamarcos6@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

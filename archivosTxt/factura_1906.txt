@@ -1,0 +1,10 @@
+factura/codcta=508
+factura/nombre=Luz Angélica Luzuriaga Rodriguez
+factura/nroiva=94578019
+factura/direccion=Barrio San Francisco MI C12, Las Heras, 5539, Argentina
+factura/mail=contactosgm2020@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

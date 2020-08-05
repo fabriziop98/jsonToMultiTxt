@@ -1,0 +1,10 @@
+factura/codcta=112
+factura/nombre=Vanesa Reta
+factura/nroiva=32909972
+factura/direccion=Junín Callejón 3, Las Heras, 5539, Argentina
+factura/mail=vanesa.joa.reta@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

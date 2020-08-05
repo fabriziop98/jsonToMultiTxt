@@ -1,0 +1,10 @@
+factura/codcta=496
+factura/nombre=Yamila Alejandra Ferreyra
+factura/nroiva=37000174
+factura/direccion=San Rafael 2103, Las Heras, 5539, Argentina
+factura/mail=ferreyrayami3@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

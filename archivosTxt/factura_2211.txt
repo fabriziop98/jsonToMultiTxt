@@ -1,0 +1,10 @@
+factura/codcta=262
+factura/nombre=José Alcorta
+factura/nroiva=35928240
+factura/direccion=Pedro Pascual Segura 3584, Pasaje Comunero Portón Alambre, Las Heras, 5539, Argentina
+factura/mail=josealcorta91@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

@@ -1,0 +1,10 @@
+factura/codcta=285
+factura/nombre=María Soledad Rivero
+factura/nroiva=28893064
+factura/direccion=Barrio San Francisco MH C23, Las Heras, 5539, Argentina
+factura/mail=miajuli09@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

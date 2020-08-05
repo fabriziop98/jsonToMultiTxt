@@ -1,0 +1,10 @@
+factura/codcta=107
+factura/nombre=Silvina Elena Salas
+factura/nroiva=23067939
+factura/direccion=Barrio Cooperativa 30 de Abril MB C4, Callejón Martinica entre Dorrego y Mathew, Las Heras, 5539, Argentina
+factura/mail=martinhoracio00@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

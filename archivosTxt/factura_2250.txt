@@ -1,0 +1,10 @@
+factura/codcta=439
+factura/nombre=Noelia Lucia Castillo
+factura/nroiva=29263661
+factura/direccion=Alvarez Condarco 610, Las Heras, 5539, Argentina
+factura/mail=nc4324997@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

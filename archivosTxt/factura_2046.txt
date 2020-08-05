@@ -1,0 +1,10 @@
+factura/codcta=134
+factura/nombre=Luis Giannino
+factura/nroiva=23429484
+factura/direccion=Barrio Democracia MC C2a, Las Heras, 5539, Argentina
+factura/mail=gianninoluis@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

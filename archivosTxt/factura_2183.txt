@@ -1,0 +1,10 @@
+factura/codcta=423
+factura/nombre=Lucas Oviedo
+factura/nroiva=34232997
+factura/direccion=independencia 2227, Dto4 en un pasillo, Las Heras, 5539, Argentina
+factura/mail=oviedolucas3012@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

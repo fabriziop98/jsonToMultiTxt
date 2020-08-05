@@ -1,0 +1,10 @@
+factura/codcta=167
+factura/nombre=Gabriela Judith Giannattasio
+factura/nroiva=23547328
+factura/direccion=Barrio San Francisco 3 MK C7, Las Heras, 5539, Argentina
+factura/mail=dagmagabriela93@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

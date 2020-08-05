@@ -1,0 +1,10 @@
+factura/codcta=27
+factura/nombre=Monica Vazquez
+factura/nroiva=14781214
+factura/direccion=B° Tamarindos III, M-H C-8, Atlantico Sur, Las Heras, 5539, Argentina
+factura/mail=nasota2009@hotmail.com.ar
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

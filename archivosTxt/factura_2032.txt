@@ -1,0 +1,10 @@
+factura/codcta=181
+factura/nombre=José Ricardo Castaño
+factura/nroiva=30571415
+factura/direccion=B° BUCIEM M C C 3, CASCO, Las Heras, 5539, Argentina
+factura/mail=jose.rcastano@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

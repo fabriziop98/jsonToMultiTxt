@@ -1,0 +1,10 @@
+factura/codcta=307
+factura/nombre=Carolina Elizabeth Castillo
+factura/nroiva=23883917
+factura/direccion=San Lorenzo 2865, Barrio Espejo, Las Heras, 5539, Argentina
+factura/mail=castillo.2107@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

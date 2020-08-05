@@ -1,0 +1,10 @@
+factura/codcta=514
+factura/nombre=Andrea Lorena Silva
+factura/nroiva=23734578
+factura/direccion=General paz 3736, 1° piso, Las Heras, 5539, Argentina
+factura/mail=pau.emir2504@gmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

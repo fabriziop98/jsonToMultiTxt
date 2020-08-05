@@ -1,0 +1,10 @@
+factura/codcta=155
+factura/nombre=José Mario Fiorentino
+factura/nroiva=25272489
+factura/direccion=Loteo Marini MA C18, Las Heras, 5539, Argentina
+factura/mail=antonellafiorentino54@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

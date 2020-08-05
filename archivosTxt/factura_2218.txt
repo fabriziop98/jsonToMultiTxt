@@ -1,0 +1,10 @@
+factura/codcta=89
+factura/nombre=Adriana Perez
+factura/nroiva=31106857
+factura/direccion=Junín 1525, Callejón 1, Las Heras, 5539, Argentina
+factura/mail=gastonarielexequiel100@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

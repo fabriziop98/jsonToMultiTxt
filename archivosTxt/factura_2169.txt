@@ -1,0 +1,10 @@
+factura/codcta=66
+factura/nombre=Gisella Muñoz
+factura/nroiva=38209469
+factura/direccion=B:Democracia M-D.  C-18, Calle 2, Las Heras, 5539, Argentina
+factura/mail=giselmunoz958@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

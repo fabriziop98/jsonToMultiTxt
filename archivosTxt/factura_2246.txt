@@ -1,0 +1,10 @@
+factura/codcta=303
+factura/nombre=Lorena Elizabeth Medina
+factura/nroiva=29125091
+factura/direccion=Barrio Santa Teresita MB C31, Las Heras, 5539, Argentina
+factura/mail=medinalorena227@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

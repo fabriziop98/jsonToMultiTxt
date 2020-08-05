@@ -1,0 +1,10 @@
+factura/codcta=25
+factura/nombre=Olga Navarro
+factura/nroiva=4768193
+factura/direccion=Yrigoyen 1017, B° Cristo Redentor M-G C-41, Las Heras, 5539, Argentina
+factura/mail=agustinae2000@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

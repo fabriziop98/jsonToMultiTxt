@@ -1,0 +1,10 @@
+factura/codcta=589
+factura/nombre=Claudio Facundo Alcaraz
+factura/nroiva=35513107
+factura/direccion=Zapata 830, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

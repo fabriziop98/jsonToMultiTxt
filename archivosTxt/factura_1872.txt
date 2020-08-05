@@ -1,0 +1,10 @@
+factura/codcta=74
+factura/nombre=Esteban Montecino
+factura/nroiva=28439587
+factura/direccion=Garibaldi 497, Las Heras, 5539, Argentina
+factura/mail=estebanmontecinos09@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

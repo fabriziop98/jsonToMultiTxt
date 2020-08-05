@@ -1,0 +1,10 @@
+factura/codcta=156
+factura/nombre=Pablo Raul Esquivel
+factura/nroiva=22536068
+factura/direccion=Puerto Argentino 2938, Las Heras, 5539, Argentina
+factura/mail=pabloesquivel187@gmail.com
+factura/codiva=cf
+linea/codart=1
+linea/cantid=1
+linea/precio=900
+linea/grabar

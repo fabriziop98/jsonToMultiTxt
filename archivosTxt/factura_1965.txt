@@ -1,0 +1,10 @@
+factura/codcta=335
+factura/nombre=Karen Lourdes Ponce
+factura/nroiva=41271440
+factura/direccion=Barrio Democracia MC C8, Las Heras, 5539, Argentina
+factura/mail=karenponcelurdes@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

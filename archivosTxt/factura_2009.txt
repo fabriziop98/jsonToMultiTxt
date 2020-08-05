@@ -1,0 +1,10 @@
+factura/codcta=401
+factura/nombre=Mario Antonio Chara
+factura/nroiva=16861581
+factura/direccion=RE San Martín 2778, Esq Libertad Barrio Indep., Las Heras, 5539, Argentina
+factura/mail=katiachara21@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

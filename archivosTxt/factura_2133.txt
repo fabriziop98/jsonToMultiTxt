@@ -1,0 +1,10 @@
+factura/codcta=572
+factura/nombre=Brenda Antonella Contreras
+factura/nroiva=38799647
+factura/direccion=Antártida Argentina 740, y Olascoaga, Las Heras, 5539, Argentina
+factura/mail=nachodanilo410@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

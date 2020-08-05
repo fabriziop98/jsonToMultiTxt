@@ -1,0 +1,10 @@
+factura/codcta=209
+factura/nombre=Lorena Belén Cortes
+factura/nroiva=28224314
+factura/direccion=Pascual Segura 3684, Casa 11, Las Heras, 5539, Argentina
+factura/mail=lorena_cortes_1980@hotmail.com
+factura/codiva=cf
+linea/codart=3
+linea/cantid=1
+linea/precio=1799
+linea/grabar

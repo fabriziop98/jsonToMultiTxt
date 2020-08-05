@@ -1,0 +1,10 @@
+factura/codcta=489
+factura/nombre=Ariel Alejandro Bergonzi
+factura/nroiva=33631159
+factura/direccion=Barrionuevo 349, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

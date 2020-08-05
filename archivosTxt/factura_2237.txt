@@ -1,0 +1,10 @@
+factura/codcta=418
+factura/nombre=Mara Gisel Castillo
+factura/nroiva=33461613
+factura/direccion=Azcuenaga 1564, Las Heras, 5539, Argentina
+factura/mail=mili87_23@hotmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

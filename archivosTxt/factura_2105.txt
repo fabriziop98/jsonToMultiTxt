@@ -1,0 +1,10 @@
+factura/codcta=561
+factura/nombre=Carlos Gabriel Sanchez
+factura/nroiva=39679081
+factura/direccion=Monseñor Orzali 845 C19, Barrio Provivienda, Las Heras, 5539, Argentina
+factura/mail=carlosanchezc9@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

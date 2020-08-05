@@ -1,0 +1,10 @@
+factura/codcta=369
+factura/nombre=Marcela Ivana Traslaviña
+factura/nroiva=28917448
+factura/direccion=Río Juramento 3771, pasando Cabildo Abierto, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar

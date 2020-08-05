@@ -1,0 +1,10 @@
+factura/codcta=470
+factura/nombre=Eduardo Maximiliano Mesina
+factura/nroiva=33445848
+factura/direccion=B° Santa Teresita MB C24, Las Heras, 5539, Argentina
+factura/mail=mesinamaximiliano32@gmail.com
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1299
+linea/grabar

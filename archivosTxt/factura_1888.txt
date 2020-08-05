@@ -1,0 +1,10 @@
+factura/codcta=424
+factura/nombre=Aldo Castro
+factura/nroiva=12764612
+factura/direccion=Alvarez Condarco 1605, Las Heras, 5539, Argentina
+factura/mail=
+factura/codiva=cf
+linea/codart=2
+linea/cantid=1
+linea/precio=1399
+linea/grabar
