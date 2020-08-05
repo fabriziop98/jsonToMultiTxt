@@ -1,6 +1,6 @@
 factura/codcta=462
 factura/nombre=Gladys Viltana Rojas
-factura/nroiva=5686521
+factura/nroiva=05686521
 factura/direccion=Barrionuevo 250, Las Heras, 5539, Argentina
 factura/mail=gladysviltana123@gmail.com
 factura/codiva=cf

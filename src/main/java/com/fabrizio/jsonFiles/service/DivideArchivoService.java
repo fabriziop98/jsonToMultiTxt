@@ -15,10 +15,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.charset.StandardCharsets;
-import java.nio.charset.Charset;
 
 import org.json.CDL;
 import org.json.JSONArray;
@@ -28,7 +24,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.mock.web.MockMultipartFile;
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 import com.fabrizio.jsonFiles.entity.Factura;
@@ -37,7 +32,6 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
 
-import com.google.common.collect.ObjectArrays;
 
 public class DivideArchivoService {
 
@@ -98,7 +92,8 @@ public class DivideArchivoService {
 	public void writeTxt(File file, List<Factura> facturas) throws Exception {
 		try {
 			modificaCsv(file);
-			MultipartFile multipart = fileToMultipartFile(file);
+			File modificado = new File(file.getAbsolutePath()+"-modificado.csv");
+			MultipartFile multipart = fileToMultipartFile(modificado);
 			JSONArray listaCliente = CsvtoJSON(multipart);
 
 			Integer contadorArchivos;
@@ -239,52 +234,42 @@ public class DivideArchivoService {
 
 	private void modificaCsv(File file) {
 		
-//		CSVReader reader = new CSVReader(new FileReader("old.csv"));
-//		CSVWriter writer = new CSVWriter(new FileWriter("new.csv"));
-//		String [] nextLine;
-//		while ((nextLine = reader.readNext()) != null) {
-//		    List<String> lineAsList = new ArrayList<String>(Arrays.asList(nextLine));
-//		    // Add stuff using linesAsList.add(index, newValue) as many times as you need.
-//		    writer.writeNext(lineAsList.toArray());
-//		}
-		
 
 		CSVReader csvReader;
 		CSVWriter csvWriter;
+		CSVWriter csvWriter2;
 		CSVReader csvReader2;
 
 		try {
 			csvReader = new CSVReader(new FileReader(file));
-			csvReader2 = null;
 
 			String[] fila = null;
 			String[] fila2 = null;
 			String[] fila3 = null;
-			String str = null;;
+			csvWriter = new CSVWriter(new FileWriter(file.getAbsolutePath()+"-modificado.csv"));
 			while ((fila = csvReader.readNext()) != null) {
 				fila2 = fila;
 				fila3 = fila;
 				for (int i = 0; i < 34; i++) {
 					System.out.println(fila[i] + " | " + i); // NOTE: i=34
 					fila2[i] = fila[i];
-					str = String.join(",", fila2);
 				}
-				csvReader2 = new CSVReader(new StringReader(str.toString()));
+				
 				for (int i = 35; i < 63; i++) {
 					System.out.println(fila[i] + " | " + i); // NOTE: i=34
 					fila3[i - 1] = fila[i];
 				}
+				log.info("length = "+fila2.length);
 				
-//				String [] joined = ObjectArrays.concat(fila2, fila3, String.class);
-				
-				
-			}
-			csvWriter = new CSVWriter(new FileWriter(file.getAbsolutePath()+"-1.csv"));
-			while ((fila2 = csvReader2.readNext()) != null) {
 				csvWriter.writeNext(fila2);
+				
+				
 			}
-			csvWriter.close();
+//			File f = new File(file.getAbsolutePath()+"-modificado.csv");
+//			f.
 			
+			
+			csvWriter.close();
 			csvReader.close();
 		} catch (IOException | CsvValidationException e) {
 			e.printStackTrace();
