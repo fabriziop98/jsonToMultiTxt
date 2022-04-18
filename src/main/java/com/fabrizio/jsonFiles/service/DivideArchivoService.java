@@ -181,7 +181,7 @@ public class DivideArchivoService {
 			log.info("FACTURA SIN DNI: factura_" + f.getId() + ".txt");
 		}
 
-		writer.println("factura/direccion=" + f.getDireccion());
+		writer.println("factura/direcc=" + f.getDireccion());
 
 		String mail = (String) factura.get("Emails");
 		writer.println("factura/mail=" + mail);
