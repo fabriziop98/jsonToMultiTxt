@@ -1,7 +1,6 @@
 package com.fabrizio.jsonFiles.service;
 
 import java.io.FileReader;
-import java.io.StringReader;
 import java.io.FileWriter;
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,9 +11,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.UUID;
 
 import org.json.CDL;
 import org.json.JSONArray;
@@ -24,14 +24,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.mock.web.MockMultipartFile;
+import org.apache.commons.io.Charsets;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.output.FileWriterWithEncoding;
 
 import com.fabrizio.jsonFiles.entity.Factura;
 import com.fabrizio.jsonFiles.util.FileUtil;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
-
 
 public class DivideArchivoService {
 
@@ -92,7 +93,7 @@ public class DivideArchivoService {
 	public void writeTxt(File file, List<Factura> facturas) throws Exception {
 		try {
 			modificaCsv(file);
-			File modificado = new File(file.getAbsolutePath()+"-modificado.csv");
+			File modificado = new File(file.getAbsolutePath() + "-modificado.csv");
 			MultipartFile multipart = fileToMultipartFile(modificado);
 			JSONArray listaCliente = CsvtoJSON(multipart);
 
@@ -168,7 +169,7 @@ public class DivideArchivoService {
 			throws FileNotFoundException, UnsupportedEncodingException {
 		PrintWriter writer;
 
-		writer = new PrintWriter(FileUtil.RUTA_ARCHIVOS + "factura_" + f.getId() + ".txt", "UTF-8");
+		writer = new PrintWriter(FileUtil.RUTA_ARCHIVOS + "factura_" + f.getId() + ".txt");
 
 		String idCliente = (String) factura.get("Id");
 		writer.println("factura/codcta=" + idCliente);
@@ -181,7 +182,7 @@ public class DivideArchivoService {
 			log.info("FACTURA SIN DNI: factura_" + f.getId() + ".txt");
 		}
 
-		writer.println("factura/direccion=" + f.getDireccion());
+		writer.println("factura/direcc=" + f.getDireccion());
 
 		String mail = (String) factura.get("Emails");
 		writer.println("factura/mail=" + mail);
@@ -233,42 +234,32 @@ public class DivideArchivoService {
 	}
 
 	private void modificaCsv(File file) {
-		
 
 		CSVReader csvReader;
 		CSVWriter csvWriter;
-		CSVWriter csvWriter2;
-		CSVReader csvReader2;
 
 		try {
-			csvReader = new CSVReader(new FileReader(file));
-
+			csvReader =new CSVReader(
+				    new InputStreamReader(new FileInputStream(file), "UTF-8"));
 			String[] fila = null;
 			String[] fila2 = null;
 			String[] fila3 = null;
-			csvWriter = new CSVWriter(new FileWriter(file.getAbsolutePath()+"-modificado.csv"));
+			csvWriter = new CSVWriter(new FileWriterWithEncoding(file.getAbsolutePath() + "-modificado.csv", "UTF-8"));
 			while ((fila = csvReader.readNext()) != null) {
 				fila2 = fila;
 				fila3 = fila;
 				for (int i = 0; i < 34; i++) {
-					System.out.println(fila[i] + " | " + i); // NOTE: i=34
 					fila2[i] = fila[i];
 				}
-				
+
 				for (int i = 35; i < 63; i++) {
-					System.out.println(fila[i] + " | " + i); // NOTE: i=34
 					fila3[i - 1] = fila[i];
 				}
-				log.info("length = "+fila2.length);
-				
+
 				csvWriter.writeNext(fila2);
-				
-				
+
 			}
-//			File f = new File(file.getAbsolutePath()+"-modificado.csv");
-//			f.
-			
-			
+
 			csvWriter.close();
 			csvReader.close();
 		} catch (IOException | CsvValidationException e) {

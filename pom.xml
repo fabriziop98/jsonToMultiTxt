@@ -141,7 +141,7 @@
 						</goals>
 						<configuration>
 							<headerType>console</headerType>
-							<outfile>target/apidast.exe</outfile>
+							<outfile>target/Facturas NR.exe</outfile>
 							<jar>${project.build.directory}/${artifactId}-${version}.jar</jar>
 							<errTitle>encc</errTitle>
 							<classPath>
