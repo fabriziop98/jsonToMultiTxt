@@ -1,7 +1,5 @@
 package com.fabrizio.jsonFiles.service;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,10 +9,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import org.json.CDL;
 import org.json.JSONArray;
@@ -24,7 +20,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.mock.web.MockMultipartFile;
-import org.apache.commons.io.Charsets;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.FileWriterWithEncoding;
 
@@ -80,7 +75,7 @@ public class DivideArchivoService {
 
 			}
 
-			log.info("Cantidad archivos: " + facturas.size());
+			log.info("Cantidad archivos: {}", facturas.size());
 			return facturas;
 
 		} catch (Exception e) {
@@ -118,7 +113,7 @@ public class DivideArchivoService {
 
 								armadoTxt(f, listaCliente.getJSONObject(i), listaCliente.getJSONObject(i + 1));
 							} else {
-								log.info("PLAN FREE: " + (String) factura.get("Name"));
+								log.info("PLAN FREE: {}", (String) factura.get("Name"));
 							}
 						}
 					}
@@ -179,7 +174,7 @@ public class DivideArchivoService {
 		String dni = (String) factura.get("DNI (custom attribute)");
 		writer.println("factura/nroiva=" + dni);
 		if (dni.isEmpty() || dni == null) {
-			log.info("FACTURA SIN DNI: factura_" + f.getId() + ".txt");
+			log.info("FACTURA SIN DNI: factura_{}", f.getId() + ".txt");
 		}
 
 		writer.println("factura/direcc=" + f.getDireccion());
@@ -191,35 +186,35 @@ public class DivideArchivoService {
 
 		String plan = (String) facturaPlan.get("Service invoice label");
 		switch (plan) {
-		case "PLAN HOGAR 3MB":
+			case "PLAN HOGAR 5MB":
+				plan = "1";
+				break;
+			case "PLAN HOGAR 8MB":
+				plan = "2";
+				break;
+			case "PLAN HOGAR 12MB":
+				plan = "3";
+				break;
+			case "PLAN HOGAR 17MB":
+				plan = "4";
+				break;
+			case "PLAN HOGAR 22MB":
+				plan = "5";
+				break;
+		}
+		if (plan.contains("($ 5MB)")) {
 			plan = "1";
-			break;
-		case "PLAN HOGAR 6MB":
-			plan = "2";
-			break;
-		case "PLAN HOGAR 10MB":
-			plan = "3";
-			break;
-		case "PLAN HOGAR 15MB":
-			plan = "4";
-			break;
-		case "PLAN HOGAR 20MB":
-			plan = "5";
-			break;
 		}
-		if (plan.contains("($ 3MB)")) {
-			plan = "1";
-		}
-		if (plan.contains("($ 6MB)")) {
+		if (plan.contains("($ 8MB)")) {
 			plan = "2";
 		}
-		if (plan.contains("($ 10MB)")) {
+		if (plan.contains("($ 12MB)")) {
 			plan = "3";
 		}
-		if (plan.contains("($ 15MB)")) {
+		if (plan.contains("($ 17MB)")) {
 			plan = "4";
 		}
-		if (plan.contains("($ 20MB)")) {
+		if (plan.contains("($ 22MB)")) {
 			plan = "5";
 		}
 		writer.println("linea/codart=" + plan);
@@ -239,7 +234,7 @@ public class DivideArchivoService {
 		CSVWriter csvWriter;
 
 		try {
-			csvReader =new CSVReader(
+			csvReader = new CSVReader(
 				    new InputStreamReader(new FileInputStream(file), "UTF-8"));
 			String[] fila = null;
 			String[] fila2 = null;
