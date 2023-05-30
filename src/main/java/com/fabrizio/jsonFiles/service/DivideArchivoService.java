@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,9 +36,9 @@ public class DivideArchivoService {
 	public List<Factura> readFacturas(File file) throws Exception {
 		try {
 			MultipartFile multipart = fileToMultipartFile(file);
-			JSONArray listaFactura = CsvtoJSON(multipart);
+			JSONArray listaFactura = csvToJSON(multipart);
 
-			List<Factura> facturas = new ArrayList<Factura>();
+			List<Factura> facturas = new ArrayList<>();
 
 			Integer contadorArchivos = 0;
 			for (Object o : listaFactura) {
@@ -90,7 +90,7 @@ public class DivideArchivoService {
 			modificaCsv(file);
 			File modificado = new File(file.getAbsolutePath() + "-modificado.csv");
 			MultipartFile multipart = fileToMultipartFile(modificado);
-			JSONArray listaCliente = CsvtoJSON(multipart);
+			JSONArray listaCliente = csvToJSON(multipart);
 
 			Integer contadorArchivos;
 			Integer espacioCliente;
@@ -120,7 +120,7 @@ public class DivideArchivoService {
 
 				}
 
-			} catch (FileNotFoundException | UnsupportedEncodingException e) {
+			} catch (FileNotFoundException e) {
 
 				e.printStackTrace();
 				throw e;
@@ -135,25 +135,23 @@ public class DivideArchivoService {
 
 	private MultipartFile fileToMultipartFile(File file) throws IOException {
 		FileInputStream input = new FileInputStream(file);
-		MultipartFile multipartFile = new MockMultipartFile("file", file.getName(), "text/plain",
+		return new MockMultipartFile("file", file.getName(), "text/plain",
 				IOUtils.toByteArray(input));
-		return multipartFile;
 	}
 
-	public JSONArray CsvtoJSON(MultipartFile file) throws Exception {
+	public JSONArray csvToJSON(MultipartFile file) throws Exception {
 		InputStream is;
 		try {
 			is = file.getInputStream();
 
-			BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+			BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 			String inputStr, csv = "";
 
 			while ((inputStr = br.readLine()) != null) {
 
 				csv += inputStr + "\n";
 			}
-			JSONArray array = CDL.toJSONArray(csv);
-			return array;
+			return CDL.toJSONArray(csv);
 		} catch (IOException e) {
 			e.printStackTrace();
 			throw e;
@@ -161,7 +159,7 @@ public class DivideArchivoService {
 	}
 
 	private void armadoTxt(Factura f, JSONObject factura, JSONObject facturaPlan)
-			throws FileNotFoundException, UnsupportedEncodingException {
+			throws FileNotFoundException {
 		PrintWriter writer;
 
 		writer = new PrintWriter(FileUtil.RUTA_ARCHIVOS + "factura_" + f.getId() + ".txt");
@@ -173,7 +171,7 @@ public class DivideArchivoService {
 
 		String dni = (String) factura.get("DNI (custom attribute)");
 		writer.println("factura/nroiva=" + dni);
-		if (dni.isEmpty() || dni == null) {
+		if (dni == null || dni.isEmpty()) {
 			log.info("FACTURA SIN DNI: factura_{}", f.getId() + ".txt");
 		}
 
@@ -200,6 +198,9 @@ public class DivideArchivoService {
 				break;
 			case "PLAN HOGAR 22MB":
 				plan = "5";
+				break;
+			default:
+				plan = "X";
 				break;
 		}
 		if (plan.contains("($ 5MB)")) {
@@ -230,36 +231,28 @@ public class DivideArchivoService {
 
 	private void modificaCsv(File file) {
 
-		CSVReader csvReader;
-		CSVWriter csvWriter;
-
-		try {
-			csvReader = new CSVReader(
-				    new InputStreamReader(new FileInputStream(file), "UTF-8"));
-			String[] fila = null;
-			String[] fila2 = null;
-			String[] fila3 = null;
-			csvWriter = new CSVWriter(new FileWriterWithEncoding(file.getAbsolutePath() + "-modificado.csv", "UTF-8"));
-			while ((fila = csvReader.readNext()) != null) {
-				fila2 = fila;
-				fila3 = fila;
-				for (int i = 0; i < 34; i++) {
-					fila2[i] = fila[i];
+		try (CSVReader csvReader = new CSVReader(
+				    new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8))) {
+			try(CSVWriter csvWriter = new CSVWriter(new FileWriterWithEncoding(file.getAbsolutePath() + "-modificado.csv", "UTF-8")); ) {
+				String[] fila = null;
+				String[] fila2 = null;
+				String[] fila3 = null;
+				while ((fila = csvReader.readNext()) != null) {
+					fila2 = fila;
+					fila3 = fila;
+					for (int i = 0; i < 34; i++) {
+						fila2[i] = fila[i];
+					}
+	
+					for (int i = 35; i < 63; i++) {
+						fila3[i - 1] = fila[i];
+					}
+	
+					csvWriter.writeNext(fila2);
+	
 				}
-
-				for (int i = 35; i < 63; i++) {
-					fila3[i - 1] = fila[i];
-				}
-
-				csvWriter.writeNext(fila2);
-
 			}
-
-			csvWriter.close();
-			csvReader.close();
-		} catch (IOException | CsvValidationException e) {
-			e.printStackTrace();
-		} catch (JSONException e) {
+		} catch (JSONException | IOException | CsvValidationException e) {
 			e.printStackTrace();
 		}
 
