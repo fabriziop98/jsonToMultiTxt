@@ -1,17 +1,11 @@
 package com.fabrizio.jsonFiles.service;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.opencsv.*;
 import org.json.CDL;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,8 +19,6 @@ import org.apache.commons.io.output.FileWriterWithEncoding;
 
 import com.fabrizio.jsonFiles.entity.Factura;
 import com.fabrizio.jsonFiles.util.FileUtil;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVWriter;
 import com.opencsv.exceptions.CsvValidationException;
 
 public class DivideArchivoService {
@@ -34,58 +26,56 @@ public class DivideArchivoService {
 	private static final Logger log = LoggerFactory.getLogger(DivideArchivoService.class);
 
 	public List<Factura> readFacturas(File file) throws Exception {
-		try {
-			MultipartFile multipart = fileToMultipartFile(file);
-			JSONArray listaFactura = csvToJSON(multipart);
+		MultipartFile multipart = fileToMultipartFile(file);
+		JSONArray listaFactura = csvToJSON(multipart);
 
-			List<Factura> facturas = new ArrayList<>();
+		List<Factura> facturas = new ArrayList<>();
 
-			Integer contadorArchivos = 0;
-			for (Object o : listaFactura) {
-				contadorArchivos++;
-				Factura f = new Factura();
-				JSONObject factura = (JSONObject) o;
+		int contadorArchivos = 0;
+		for (Object o : listaFactura) {
+			contadorArchivos++;
+			Factura f = new Factura();
+			JSONObject factura = (JSONObject) o;
 
-				String nombre = (String) factura.get("Client name");
+			String nombre = (String) factura.get("Client name");
 
-				String id = (String) factura.get("Number");
+			String id = (String) factura.get("Number");
 
-				String direccion = (String) factura.get("Client address");
+			String direccion = (String) factura.get("Client address");
 
-				String precio = (String) factura.get("Total");
-				Integer coma = precio.indexOf(",");
-				precio = precio.substring(0, coma);
-				if (precio.contains(",00")) {
-					precio = precio.replace(",00", "");
-				}
-				if (precio.contains("$")) {
-					precio = precio.replace("$", "");
-				}
-				if (precio.contains(".")) {
-					precio = precio.replace(".", "");
-				}
-				precio = precio.substring(1, precio.length());
-
-				f.setMonto(precio);
-				f.setNombre(nombre);
-				f.setId(id);
-				f.setDireccion(direccion);
-
-				facturas.add(f);
-
+			String precio = (String) factura.get("Total");
+			int indexComa = precio.indexOf(",");
+			//Si existe el coma en el precio
+			if(indexComa != -1) {
+				precio = precio.substring(0, indexComa);
 			}
+			if (precio.contains(",00")) {
+				precio = precio.replace(",00", "");
+			}
+			if (precio.contains("$")) {
+				precio = precio.replace("$", "");
+			}
+			if (precio.contains(".")) {
+				precio = precio.replace(".", "");
+			}
+			precio = precio.substring(1, precio.length());
 
-			log.info("Cantidad archivos: {}", facturas.size());
-			return facturas;
+			f.setMonto(precio);
+			f.setNombre(nombre);
+			f.setId(id);
+			f.setDireccion(direccion);
 
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw e;
+			facturas.add(f);
+
 		}
+
+		log.info("Cantidad archivos: {}", facturas.size());
+		return facturas;
+
 
 	}
 
-	public void writeTxt(File file, List<Factura> facturas) throws Exception {
+	public void writeAndConvertClientTxt(File file, List<Factura> facturas) throws Exception {
 		try {
 			modificaCsv(file);
 			File modificado = new File(file.getAbsolutePath() + "-modificado.csv");
@@ -148,7 +138,6 @@ public class DivideArchivoService {
 			String inputStr, csv = "";
 
 			while ((inputStr = br.readLine()) != null) {
-
 				csv += inputStr + "\n";
 			}
 			return CDL.toJSONArray(csv);

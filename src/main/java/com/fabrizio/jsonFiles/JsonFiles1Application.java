@@ -65,7 +65,7 @@ public class JsonFiles1Application implements CommandLineRunner {
 							logger.info("PATH: " + chooser2.getSelectedFile().getPath());
 							File file2 = chooser2.getSelectedFile();
 							try {
-								service.writeTxt(file2, facturas);
+								service.writeAndConvertClientTxt(file2, facturas);
 								JOptionPane.showMessageDialog(null,
 										"Los archivos se generaron en la ruta: " + FileUtil.RUTA_ARCHIVOS, "¡Éxito!",
 										JOptionPane.INFORMATION_MESSAGE);
