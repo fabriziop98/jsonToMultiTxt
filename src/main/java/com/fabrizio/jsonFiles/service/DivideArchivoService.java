@@ -44,19 +44,19 @@ public class DivideArchivoService {
 			String direccion = (String) factura.get("Client address");
 
 			String precio = (String) factura.get("Total");
-			int indexComa = precio.indexOf(",");
-			//Si existe el coma en el precio
-			if(indexComa != -1) {
-				precio = precio.substring(0, indexComa);
+			int indexPunto = precio.indexOf(".");
+			//Si existe el punto en el precio
+			if(indexPunto != -1) {
+				precio = precio.substring(0, indexPunto);
 			}
-			if (precio.contains(",00")) {
-				precio = precio.replace(",00", "");
+			if (precio.contains(".00")) {
+				precio = precio.replace(".00", "");
 			}
-			if (precio.contains("$")) {
-				precio = precio.replace("$", "");
+			if (precio.contains("ARS")) {
+				precio = precio.replace("ARS", "");
 			}
-			if (precio.contains(".")) {
-				precio = precio.replace(".", "");
+			if (precio.contains(",")) {
+				precio = precio.replace(",", "");
 			}
 			precio = precio.substring(1, precio.length());
 
